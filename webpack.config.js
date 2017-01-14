@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var bourbon = require('node-bourbon');
 var ProvidePlugin = require('webpack/lib/ProvidePlugin.js');
 module.exports = {
     entry: {
@@ -19,6 +20,7 @@ resolve: {
 
 module: {
     loaders: [
+        { test: /\.sass$/, loader: "style!css!sass?indentedSyntax&includePaths[]=" + bourbon.includePaths },
         { test: /\.css$/, loader: "style!css"},
         {
             test: /\.jsx$/,
