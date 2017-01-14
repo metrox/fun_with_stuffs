@@ -1,0 +1,29 @@
+{
+  "name": "fun_with_stuffs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:metrox/fun_with_stuffs.git",
+  "author": "metrox <dawid.dyderski@righthello.com>",
+  "license": "MIT",
+  "scripts": {
+    "frontend": "webpack --progress --profile --colors --bail -d --config webpack.config.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.13.1",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-react": "^6.9.0",
+    "jquery": "^3.1.1",
+    "jsx-loader": "^0.13.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^1.14.0"
+  }
+}
